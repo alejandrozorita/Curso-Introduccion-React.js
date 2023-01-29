@@ -19,8 +19,8 @@ function TodoItem(props) {
         {props.text}
       </p>
       <span
-      onClick={() => onDelete('ya borraste el Todo ' + props.text)}
-      className="Icon Icon-delete">
+        onClick={() => onDelete('ya borraste el Todo ' + props.text)}
+        className="Icon Icon-delete">
         X
       </span>
     </li>
