@@ -1,9 +1,16 @@
 import './CreateTodoButton.css';
 
-function CreateTodoButton(){
-    return(
-        <button className="CreateTodoButton">+</button>
+function CreateTodoButton() {
+
+    const onClickButton = (msg) => {
+        alert(msg)
+    }
+    return (
+        <button
+            className="CreateTodoButton"
+            onClick={() => onClickButton('aquí debería abrirse la modal')}
+        >+</button>
     );
 }
 
-export { CreateTodoButton};
+export { CreateTodoButton };
